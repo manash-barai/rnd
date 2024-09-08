@@ -116,23 +116,23 @@ const CharacterCustomization = () => {
 
 
 
-    const handleGenerateImage = async () => {
-        try {
-            const { hairImage, skinImage, eyeImage } = getCharacterImage();
-            const response = await axios.post('/api/customize-image', {
-                baseImageUrl: 'https://www.dinkleboo.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/l/i/lifestyle_-_the_firefighter_1.jpg',
-                customizations: {
-                    hairImage,
-                    skinImage,
-                    eyeImage,
-                    ...character
-                }
-            });
-            setCustomizedImage(response.data.imageUrl);
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const handleGenerateImage = async () => {
+    //     try {
+    //         const { hairImage, skinImage, eyeImage } = getCharacterImage();
+    //         const response = await axios.post('/api/customize-image', {
+    //             baseImageUrl: 'https://www.dinkleboo.com/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/l/i/lifestyle_-_the_firefighter_1.jpg',
+    //             customizations: {
+    //                 hairImage,
+    //                 skinImage,
+    //                 eyeImage,
+    //                 ...character
+    //             }
+    //         });
+    //         setCustomizedImage(response.data.imageUrl);
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
 
 
