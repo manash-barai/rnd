@@ -112,9 +112,11 @@
   }
   
   .skin-tone.light {
-    background-color: #fdd5b1;
+    background-color: #e4dcd5;
   }
-  
+  .skin-tone.lightMedium {
+    background-color: #a7927f;
+  }
   .skin-tone.medium {
     background-color: #e2a469;
   }

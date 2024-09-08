@@ -139,12 +139,16 @@ const CharacterCustomization = () => {
 
     return (
         <div className="customization-container">
+            <div className="w-full lg:w-1/2 mx-auto ">
+
+<img className="w-full h-full" src="/images/lifestyle_-_the_firefighter_1 (1).jpg" alt="Customized Character" />
+            </div>
 
             <div className="block lg:flex gap-16 items-center  ">
-                <div className="character-preview flex-1  h-[480px]">
+                <div className="character-preview flex-1  lg:h-[470px]  h-[875px]">
 
                     {/* Character Preview */}
-                    <div className={`shadow ${character.gender === 'female' ? 'shadow-pink-500' : 'shadow-blue-600'} rounded w-full flex px-28 gap-12 pt-11 pb-8`}>
+                    <div className={`shadow ${character.gender === 'female' ? 'shadow-pink-500' : 'shadow-blue-600'} rounded w-full block lg:flex px-28 gap-12 pt-11 pb-8`}>
 
                         <div className="  flex-1">
 
@@ -280,13 +284,13 @@ const CharacterCustomization = () => {
                 </div>
             </div>
 
-            <button onClick={handleGenerateImage}>Generate Customized Image</button>
+            {/* <button onClick={handleGenerateImage}>Generate Customized Image</button>
 
-{customizedImage && (
-    <div>
-        <img src={customizedImage} alt="Customized Character" />
-    </div>
-)}
+            {customizedImage && (
+                <div>
+                    <img src={customizedImage} alt="Customized Character" />
+                </div>
+            )} */}
         </div>
     );
 };
